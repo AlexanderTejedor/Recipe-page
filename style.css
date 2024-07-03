@@ -19,12 +19,38 @@
     --title-font: "Young Serif", serif;
 }
 
+/* Repeat values */
+
+.header-container,
+.preparation-container,
+.ingredients-container,
+.instructions-container,
+.nutrition-container{
+    padding: 0 2rem;
+}
+.ingredients-title,
+.instructions-title,
+.nutrition-title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-family: var(--title-font);
+    font-weight: var(--normal-weight);
+    color: var(--primary-nutmeg-color);
+}
+.ingredients-container::after,
+.instructions-container::after{
+    content: "";
+    display: block;
+    margin: 2rem 0;
+    border-bottom: 2px solid var(--light-grey);
+
+}
+/* End Repeat values */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-    font-size: var(--paragrapg-size);
 }
 body{
     display: flex;
@@ -39,13 +65,7 @@ body{
 }
 .img-container img{
     max-width: 100%;
-}
-.header-container,
-.preparation-container,
-.ingredients-container,
-.instructions-container,
-.nutrition-container{
-    padding: 1rem 2rem;
+    margin-bottom: 2rem;
 }
 .header-title{
     margin-bottom: 1rem;
@@ -54,6 +74,8 @@ body{
     font-family: var(--title-font);
     color: var(--dark-charcoal);
 }
+
+/* Preparation container */
 .preparation-container{
     display: flex;
     flex-direction: column;
@@ -62,6 +84,7 @@ body{
     margin-bottom: 1rem;
     background-color: var(--rose-white);
     margin: 2rem;
+    padding: 1.5rem;
     border-radius: .5rem;
 }
 .preparation-title{
@@ -70,16 +93,34 @@ body{
     align-self: start;
     margin-bottom: .5rem;
 }
+.preparation-list{
+    margin-left: 1.5rem;
+}
 .preparation-list__item{
     color: var(--wenge-brown);
     padding: .3rem;
 }
-::marker{
+.preparation-list__item::marker{
     color:var(--dark-raspberry);
+    font-size: .8rem;
 }
 .preparation-list__item span{
     font-weight: var(--bold-weight);
 }
+
+/* Ingredients container */
+
+.ingredients-list{
+    margin-left: 1.875rem;
+}
+.ingredients-list__item{
+    margin-bottom: .5rem;
+}
+.ingredients-list__item::marker{
+    color: var(--primary-nutmeg-color);
+    font-size: .8rem;
+}
+/* Nutrition container */
 .nutrition-container{
     padding: 2rem;
 }
