@@ -34,7 +34,7 @@
     margin-bottom: 1rem;
     font-size: 1.7rem;
     font-family: var(--title-font);
-    font-weight: var(--normal-weight);
+    font-weight: 500;
     color: var(--primary-nutmeg-color);
 }
 .ingredients-container::after,
@@ -110,15 +110,29 @@ body{
 
 /* Ingredients container */
 
-.ingredients-list{
+.ingredients-list,
+.instructions-list{
     margin-left: 1.875rem;
 }
+.instructions-list__item::marker{
+    color: var(--primary-nutmeg-color);
+}
 .ingredients-list__item{
-    margin-bottom: .5rem;
+    padding-left: 20px;
+    margin-left: -15px;
+    margin-bottom: .7rem;
 }
 .ingredients-list__item::marker{
     color: var(--primary-nutmeg-color);
     font-size: .8rem;
+}
+.instructions-list__item {
+    padding-left: 10px;
+    margin-bottom: .5rem;
+    line-height: 1.5rem;
+}
+.instructions-list__item span{
+    font-weight: var(--bold-weight);
 }
 /* Nutrition container */
 .nutrition-container{
