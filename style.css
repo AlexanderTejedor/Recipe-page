@@ -1,11 +1,86 @@
+/* Variables */
+:root{
+    /*Primary colors*/
+    --primary-nutmeg-color: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    /* Neutral colors */
+    --neutral-white:hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /*Typography*/
+    --paragrapg-size: 1rem;
+    --normal-weight: 400;
+    --medium-weight: 600;
+    --bold-weight: 700;
+    --title-font: "Young Serif", serif;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
+    font-size: var(--paragrapg-size);
 }
-.young-serif-regular {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--eggshell);
+    color: var(--wenge-brown);
 }
+.main-container{
+    max-width: 375px;
+    background-color: var(--neutral-white);
+}
+.img-container img{
+    max-width: 100%;
+}
+.header-container,
+.preparation-container,
+.ingredients-container,
+.instructions-container,
+.nutrition-container{
+    padding: 1rem 2rem;
+}
+.header-title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: var(--normal-weight);
+    font-family: var(--title-font);
+    color: var(--dark-charcoal);
+}
+.preparation-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--rose-white);
+    margin: 2rem;
+    border-radius: .5rem;
+}
+.preparation-title{
+    font-size: 1.1rem;
+    color: var(--dark-raspberry);
+    align-self: start;
+    margin-bottom: .5rem;
+}
+.preparation-list__item{
+    color: var(--wenge-brown);
+    padding: .3rem;
+}
+::marker{
+    color:var(--dark-raspberry);
+}
+.preparation-list__item span{
+    font-weight: var(--bold-weight);
+}
+.nutrition-container{
+    padding: 2rem;
+}
+
