@@ -135,35 +135,27 @@ body{
 .instructions-list__item span{
     font-weight: var(--bold-weight);
 }
-/* Nutrition container */
 
+/* Nutrition container */
 .nutrition-container{
     margin-bottom: 2.5rem;
 }
 .nutrition-description{
     margin-bottom: 1.2rem;
 }
-/* .nutrition-table{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.property{
-    padding-right: 3.5rem;
+.table-container{
+    width: 100%;
 }
 .nutrition-table .value{
     font-weight: var(--bold-weight);
     color:var(--primary-nutmeg-color);
-} */
-
-.table-item{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: e;
-    margin-bottom: .5rem;
 }
-.table-item .value{
-    font-weight: var(--bold-weight);
-    color: var(--primary-nutmeg-color);
+.nutrition-table .td,
+.table-container .row{
+    width: 1%;
+    border-bottom: 1px solid var(--light-grey);
+    padding: 1rem;
+}
+.table-container tr:last-child td {
+    border-bottom: none;
 }
