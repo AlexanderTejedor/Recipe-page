@@ -162,4 +162,40 @@ body{
 .table-container tr:last-child td {
     border-bottom: none;
 }
+/*Responsive*/
 
+/* Tablet */
+@media (min-width: 768px) {
+    .main-container{
+        max-width: 500px;
+        margin: 3rem 0;
+        border-radius: 1.5rem;
+    }
+    .img-container{
+        padding: 2rem 2rem 0;
+    }
+    .img-container img{
+        border-radius: .5rem;
+    }
+    .preparation-container{
+        align-items: start;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+    .main-container{
+        max-width: 700px;
+        margin: 3rem 0;
+        border-radius: 1.5rem;
+    }
+    .img-container{
+        padding: 2rem 2rem 0;
+    }
+    .img-container img{
+        border-radius: .8rem;
+    }
+    .preparation-container{
+        align-items: start;
+    }
+}
