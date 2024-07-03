@@ -71,7 +71,7 @@ Now that I have finished this challenge, I want to continue working on basic pro
 
 - [Google Fonts](https://fonts.google.com/) - This helped me to use external fonts instead of local ones, so that everyone can identify the type of font I used for this challenge.
 - [mdn web docs](https://developer.mozilla.org/es/docs/Web/CSS/::marker) - This page is very good for finding documentation. In fact, I used it a lot. At this moment, I used it to learn how to change the styles of <ol> and <ul> lists. It was quite useful in this challenge.
-- [nekpCalc](https://nekocalc.com/es/px-a-rem-conversor) - I used this page to support me with relative measurements like rem. I used it as a reference to use the rem measurement in my project and improve the challenge.
+-  [nekpCalc](https://nekocalc.com/es/px-a-rem-conversor) - I used this page to support me with relative measurements like rem. I used it as a reference to use the rem measurement in my project and improve the challenge.
 
 ## Author
 
